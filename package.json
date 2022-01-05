@@ -55,6 +55,10 @@
     "site",
     "builder"
   ],
+  "engines": {
+    "node": "14.17.3",
+    "yarn": "1.22.17"
+  },
   "babel": {
     "env": {
       "test": {
