@@ -20,3 +20,9 @@ bower_components/
 grapesjs-*.tgz
 _index.html
 docs/.vuepress/dist
+dist/grapes.min.js.map
+dist/grapes.min.js
+dist/css/grapes.min.css
+dist/grapes.min.js.map
+dist/grapes.min.js
+dist/css/grapes.min.css
