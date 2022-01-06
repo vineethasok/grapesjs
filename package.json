@@ -102,9 +102,9 @@
     "build": "npm run check && run-s build:*",
     "build:js": "grapesjs-cli build --targets=\"> 1%, ie 11, safari 8, not dead\" --statsOutput=\"stats.json\" --localePath=\"src/i18n/locale\"",
     "build:css": "sass src/styles/scss/main.scss dist/css/grapes.min.css --no-source-map --style=compressed --load-path=node_modules",
-    "start": "run-p start:*",
-    "start:js": "grapesjs-cli serve",
-    "start:css": "npm run build:css -- --watch",
+    "dev": "run-p dev:*",
+    "dev:js": "grapesjs-cli serve",
+    "dev:css": "npm run build:css -- --watch",
     "format": "prettier --single-quote --write './{src,test}/**/*.js'",
     "test": "jest",
     "test:dev": "jest --watch"
