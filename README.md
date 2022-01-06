@@ -114,7 +114,7 @@ $ yarn
 Start the dev server
 
 ```sh
-$ yarn start
+$ yarn dev
 ```
 
 Once the development server is started you should be able to reach the demo page (eg. `http://localhost:8080`)
