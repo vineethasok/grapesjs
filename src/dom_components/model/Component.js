@@ -1107,7 +1107,14 @@ export default class Component extends Model.extend(Styleable) {
     const ppfx = (em && em.getConfig('stylePrefix')) || '';
 
     if (!model.get('toolbar')) {
-      var tb = [];
+      var tb = [
+        {
+          attributes: { class: 'fa fa-plus' },
+          command: () => {
+            document.querySelector('.open-blocks').click();
+          }
+        }
+      ];
       if (model.collection) {
         tb.push({
           attributes: { class: 'fa fa-arrow-up' },

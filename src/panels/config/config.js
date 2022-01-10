@@ -76,7 +76,7 @@ export default {
         },
         {
           id: obl,
-          className: 'fa fa-th-large',
+          className: 'fa fa-th-large open-blocks',
           command: obl,
           togglable: 0,
           attributes: { title: 'Open Blocks' }
