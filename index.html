@@ -85,7 +85,17 @@
         container: '#gjs',
         height: '100%',
         fromElement: true,
-        storageManager: { autoload: 0 },
+        storageManager: {
+          id: 'gjs-',             // Prefix identifier that will be used inside storing and loading
+          type: 'local',          // Type of the storage
+          autosave: true,         // Store data automatically
+          autoload: true,         // Autoload stored data on init
+          stepsBeforeSave: 1,     // If autosave enabled, indicates how many changes are necessary before store method is triggered
+          storeComponents: true,  // Enable/Disable storing of components in JSON format
+          storeStyles: true,      // Enable/Disable storing of rules in JSON format
+          storeHtml: true,        // Enable/Disable storing of components as HTML string
+          storeCss: true,         // Enable/Disable storing of rules as CSS string
+        },
         styleManager : {
           sectors: [{
               name: 'General',
@@ -119,8 +129,16 @@
       editor.BlockManager.add('testBlock', {
         label: 'Block',
         attributes: { class:'gjs-fonts gjs-f-b1' },
+        category: 'Basic',
         content: `<div style="padding-top:50px; padding-bottom:50px; text-align:center">Test block</div>`
       })
+
+      if (localStorage.getItem('gjs-blocks-list')?.length > 0) {
+        const blockList = JSON.parse(localStorage.getItem('gjs-blocks-list'))
+        blockList.forEach((b) => {
+          editor.BlockManager.add(b.id, b)
+        })
+      }
     </script>
   </body>
 </html>

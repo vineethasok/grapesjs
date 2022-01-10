@@ -1,5 +1,6 @@
 const swv = 'sw-visibility';
 const expt = 'export-template';
+const addblock = 'add-block';
 const osm = 'open-sm';
 const otm = 'open-tm';
 const ola = 'open-layers';
@@ -46,6 +47,12 @@ export default {
           className: 'fa fa-code',
           command: expt,
           attributes: { title: 'View code' }
+        },
+        {
+          id: addblock,
+          className: 'fa fa-plus',
+          command: addblock,
+          attributes: { title: 'Add Block' }
         }
       ]
     },

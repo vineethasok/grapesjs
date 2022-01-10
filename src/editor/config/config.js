@@ -311,6 +311,7 @@ export default {
 
   // Texts
   textViewCode: 'Code',
+  modalImportButton: 'Add Block',
 
   // Keep unused styles within the editor
   keepUnusedStyles: 0,

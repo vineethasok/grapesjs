@@ -381,3 +381,13 @@
     background-color: rgba(0, 0, 0, 0.2);
   }
 }
+.input-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 10px;
+  gap: 20px;
+  
+  .input-element {
+    width: auto;
+  }
+}

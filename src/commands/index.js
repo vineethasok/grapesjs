@@ -41,6 +41,7 @@ const commandsDef = [
   ['canvas-move', 'CanvasMove'],
   ['canvas-clear', 'CanvasClear'],
   ['open-code', 'ExportTemplate', 'export-template'],
+  ['add-block', 'AddBlock', 'add-block'],
   ['open-layers', 'OpenLayers', 'open-layers'],
   ['open-styles', 'OpenStyleManager', 'open-sm'],
   ['open-traits', 'OpenTraitManager', 'open-tm'],
